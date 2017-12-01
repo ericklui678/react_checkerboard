@@ -13,6 +13,7 @@ const Row = ({style, value}) => {
   }
   const cellRow = [];
   for (let i = 0; i < 12; i++) {
+    // alternative colors for each cell
     if (i % 2) {
       cellRow.push(<Cell style={style} color={style.colorA}  key={i}/>);
     } else {
